@@ -5,21 +5,21 @@
 class Costmeter < Formula
   desc "Cost tracking & budget enforcement for AI agent API calls"
   homepage "https://costmeter.io"
-  version "2.2.0-alpha"
+  version "2.2.1-alpha"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ggonzalezaleman/costmeter/releases/download/v2.2.0-alpha/costmeter_2.2.0-alpha_darwin_amd64.tar.gz"
-      sha256 "4b9d325e54566607d32cd734885044cd2f000b8030a5c04583b9cf51aeea4d33"
+      url "https://github.com/ggonzalezaleman/costmeter/releases/download/v2.2.1-alpha/costmeter_2.2.1-alpha_darwin_amd64.tar.gz"
+      sha256 "5cbbbf01dc44c51e9f78b1856ab161e656343007c82d97d02181296af60e7bd2"
 
       define_method(:install) do
         bin.install "costmeter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ggonzalezaleman/costmeter/releases/download/v2.2.0-alpha/costmeter_2.2.0-alpha_darwin_arm64.tar.gz"
-      sha256 "431dc0356b826e9b3ea215910f7bd17119e26e58c1033072674b6c59f8f0d3ab"
+      url "https://github.com/ggonzalezaleman/costmeter/releases/download/v2.2.1-alpha/costmeter_2.2.1-alpha_darwin_arm64.tar.gz"
+      sha256 "d412a2346c60f39305d25c5185e37bf30e25c62ebcae46433f5e15dc8c350303"
 
       define_method(:install) do
         bin.install "costmeter"
@@ -29,15 +29,15 @@ class Costmeter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ggonzalezaleman/costmeter/releases/download/v2.2.0-alpha/costmeter_2.2.0-alpha_linux_amd64.tar.gz"
-      sha256 "ddfdde2f45d6e3709315dedba95b44a7d253c99672c3cf2e623a5f79beba0e0d"
+      url "https://github.com/ggonzalezaleman/costmeter/releases/download/v2.2.1-alpha/costmeter_2.2.1-alpha_linux_amd64.tar.gz"
+      sha256 "869c4be06cf4965f0e0ac2a652b96c104e3a987ae920d65d9e1b64ead6a423db"
       define_method(:install) do
         bin.install "costmeter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ggonzalezaleman/costmeter/releases/download/v2.2.0-alpha/costmeter_2.2.0-alpha_linux_arm64.tar.gz"
-      sha256 "e642f9218b9000c969c0667efda995343f73e10e1005cece7d91146c1f63d3df"
+      url "https://github.com/ggonzalezaleman/costmeter/releases/download/v2.2.1-alpha/costmeter_2.2.1-alpha_linux_arm64.tar.gz"
+      sha256 "a0ca15c9b75631fae712eaa7b26151d5154fde5c7b76c0c626a9436baf492a65"
       define_method(:install) do
         bin.install "costmeter"
       end
